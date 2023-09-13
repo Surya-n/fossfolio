@@ -20,9 +20,9 @@ export const DeleteModal = ({ isOpen, onClose }: IModal) => {
             if (!data.ok) {
                 throw new Error();
             }
-            onClose()
+            onClose();
             toast.success('org has been deleted');
-            router.push("/org")
+            router.push('/org');
         } catch {
             toast.error('could not delete org');
         }
@@ -34,16 +34,17 @@ export const DeleteModal = ({ isOpen, onClose }: IModal) => {
                 <DialogHeader>
                     Delete Org
                     <DialogDescription className="mt-3">
-                        Are you sure You want to delete the organisation ? you can&apos;t undo this action afterwards.
+                        Are you sure You want to delete the organisation ? you can&apos;t undo this
+                        action afterwards.
                         <div className="flex justify-end space-x-2 mt-5">
                             <Button
-                                className="text-[black] bg-[#F9F5FF]  border-[1.4px]  hover:text-[white] hover:bg-btn"
+                                className="bg-[#dad6e2] px-5 py-2 rounded-sm text-[black] hover:text-[#888888] hover:bg-[#E5E2E8]  border-[1.4px] hover:border-[#CCCCCC]"
                                 onClick={onClose}
                             >
                                 Cancel
                             </Button>
                             <Button
-                                className="text-[white] bg-[red]  border-[1.4px]  "
+                                className="text-[white] bg-[#ed0000]  border-[1.4px] hover:bg-[#c60000]  "
                                 onClick={handleDeleteClick}
                             >
                                 Delete
