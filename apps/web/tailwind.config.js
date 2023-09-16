@@ -20,6 +20,14 @@ module.exports = {
         },
         colors: {
             btn: '#6941C6',
+            'custom-gray': '#dad6e2',
+            'custom-hover-gray': '#E5E2E8',
+            'custom-text': '#000000',
+            'custom-hover-text': '#888888',
+            'custom-border': '#CCCCCC',
+            'custom-red': '#ed0000',
+            'custom-hover-red': '#c60000',
+            white: '#FFFFFF',
         },
         extend: {
             colors: {
@@ -32,6 +40,7 @@ module.exports = {
                     DEFAULT: '#7F56D9',
                     foreground: 'hsl(var(--primary-foreground))',
                 },
+
                 secondary: {
                     DEFAULT: 'hsl(var(--secondary))',
                     foreground: 'hsl(var(--secondary-foreground))',

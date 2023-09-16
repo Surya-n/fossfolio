@@ -38,13 +38,13 @@ export const DeleteModal = ({ isOpen, onClose }: IModal) => {
                         action afterwards.
                         <div className="flex justify-end space-x-2 mt-5">
                             <Button
-                                className="bg-[#dad6e2] px-5 py-2 rounded-sm text-[black] hover:text-[#888888] hover:bg-[#E5E2E8]  border-[1.4px] hover:border-[#CCCCCC]"
+                                className="bg-custom-gray px-5 py-2 rounded-sm text-custom-text hover:text-custom-hover-text hover:bg-custom-hover-gray  border-[1.4px] hover:custom-border"
                                 onClick={onClose}
                             >
                                 Cancel
                             </Button>
                             <Button
-                                className="text-[white] bg-[#ed0000]  border-[1.4px] hover:bg-[#c60000]  "
+                                className="text-white bg-custom-red  border-[1.4px] hover:bg-custom-hover-red "
                                 onClick={handleDeleteClick}
                             >
                                 Delete
